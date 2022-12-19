@@ -14,4 +14,9 @@ public class PersonServiceImpl implements PersonService {
     public Person querySomePeople(Integer id) {
         return personMapper.querySomePeople(id);
     }
+
+    @Override
+    public Person[] queryAllPeople() {
+        return personMapper.queryAllPeople();
+    }
 }

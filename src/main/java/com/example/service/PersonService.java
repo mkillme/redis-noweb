@@ -4,4 +4,5 @@ import com.example.bean.Person;
 
 public interface PersonService {
     Person querySomePeople(Integer id);
+    Person[] queryAllPeople();
 }

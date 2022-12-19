@@ -21,9 +21,18 @@ public class MyController {
     @RequestMapping("/get/{id}")
     @ResponseBody
     public Person getPerson(@PathVariable Integer id){
+        System.out.println("------------------------------");
         Person person = personService.querySomePeople(id);
         return person;
     }
+
+    @RequestMapping("/all")
+    @ResponseBody
+    public Person[] all(){
+        Person[] person = personService.queryAllPeople();
+        return person;
+    }
+
 
     @RequestMapping("/get2")
     @ResponseBody

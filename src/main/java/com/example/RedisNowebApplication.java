@@ -17,17 +17,16 @@ public class RedisNowebApplication {
 
     public static void main(String[] args) {
         ApplicationContext ac = SpringApplication.run(RedisNowebApplication.class, args);
-        PersonMapper obj = (PersonMapper) ac.getBean("personMapper");
+
+/*        PersonMapper obj = (PersonMapper) ac.getBean("personMapper");
         Person p = obj.querySomePeople(1);
 
-        /**redis*/
+        *//**redis*//*
         RedisTemplate<String,String> redisTemplate = (RedisTemplate)ac.getBean("redisTemplate");
         ValueOperations operations = redisTemplate.opsForValue();
-        operations.set("hello",p);
+        operations.set("hello",p);*/
 
-
-
-
+        
     }
 
 }

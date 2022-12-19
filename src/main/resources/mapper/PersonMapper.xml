@@ -6,4 +6,7 @@
     <select id="querySomePeople" resultType="com.example.bean.Person">
         select * from person where id = #{id}
     </select>
+    <select id="queryAllPeople" resultType="com.example.bean.Person">
+        select * from person
+    </select>
 </mapper>
